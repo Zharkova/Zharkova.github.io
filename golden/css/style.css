@@ -1,0 +1,490 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  word-wrap: break-word; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  color: #777; }
+
+/*Шапка и меню*/
+
+.header {
+  background: url(../img/header-bg.png) center center/cover;
+  min-height: 700px; }
+
+.logo {
+  float: left;
+  margin: 34px 0 0 10px; 
+}
+
+.logo__text {
+  color: #fed136;
+  font: 2em "wisdom script", Roboto, sans-serif; }
+  .logo__text:hover {
+    cursor: pointer; }
+
+.menu {
+  float: right;
+  margin: 47px 0 0 0; }
+
+.menu__link {
+  font: 1em Montserrat, Verdana, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 43px; }
+  .menu__link:hover {
+    color: #fed136;
+    font-size: 1.5em;
+    -webkit-transition: 1.2s ease-in-out;
+    transition: 1.2s ease-in-out; }
+  .menu__link:focus {
+    text-decoration: none;
+    color: #fed136; }
+
+.menu__link-last {
+  margin-right: 10px; }
+
+/*Первый экран*/
+
+.first-screen {
+  text-align: center;
+  margin-top: 198px; }
+
+.first-screen__down {
+  margin-top: 19px; }
+
+.first-screen__text {
+  color: #fff; }
+
+.first-screen__text_small {
+  font: 3em "Droid Serif", Tahoma, sans-serif; }
+
+.first-screen__text_big {
+  font: 5.4em Montserrat, Verdana, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.button {
+  color: #fff;
+  font: 1.3em Montserrat, Verdana, Arial, sans-serif;
+  background-color: #e4b410;
+  border: none;
+  width: 240px;
+  height: 65px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin: 30px 0 30px 0;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .button:focus {
+    outline: none; }
+
+/*Второй экран*/
+
+.two-screen {
+  min-height: 568px; }
+
+.article-caption {
+  text-align: center; }
+
+.article-caption__text-big {
+  font: 2.9em Montserrat, Verdana, sans-serif;
+  color: #222;
+  margin-top: 109px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.article-caption__text-small {
+  font: 1.2em "Droid Serif", Arial, sans-serif; }
+
+.services-column {
+  text-align: center; }
+
+.services-column__caption-bold {
+  font: 18px Montserrat;
+  font-weight: bold;
+  color: #222;
+  margin-top: 21px; }
+
+.services-column__caption-description {
+  font: 14px "Roboto Slab"; }
+
+.fa-shopping-basket,
+ .fa-laptop,
+ .fa-lock{
+  color: #e4b410;
+  font-size: 45px;
+  padding: 11px;
+  border: 3px solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.fa-lock {
+  padding: 11px 22px; }
+
+.block {
+  margin: 64px 0 20px 0; }
+
+.three-screen {
+  min-height: 1218px;
+  background-color: #f7f7f7; }
+
+.gallery-portfolio {
+  margin-top: 64px;
+  text-align: center; }
+
+.gallery-img:hover {
+  cursor: pointer;
+  opacity: .5; }
+
+.gallery-portfolio__description {
+  font: 18px Montserrat;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  max-width: 291px;
+  margin: 0 auto 50px auto;
+  padding-top: 24px;
+  height: 93px; }
+
+.gallery-portfolio__small {
+  font: 14px "Droid Serif"; }
+
+  /*Модальное окно*/
+
+.modal-form {
+  padding: 5px 15px 15px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  display: none;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background: #000;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  z-index: 100;
+  margin: -30px 50px 0 -150px; }
+
+#tell {
+  margin-top: 25px; }
+
+.form-group__label-form {
+  width: 100px;
+  height: 38px;
+  font: .8em Jura, Roboto, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  font-weight: line;
+  *zoom: 1; }
+
+.form-group__input-name, .form-group__input-email {
+  font: 1.3em Montserrat, Verdana, sans-serif;
+  color: #000;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.form-group__input-email {
+  margin-top: 10px; }
+
+.button_small {
+  background: transparent;
+  border: 2px solid #fed136; }
+
+.thank {
+  color: #fff;
+  line-height: 30px;
+  font: 1.3em Montserrat, Verdana, sans-serif; }
+
+.close {
+  width: 16px;
+  height: 16px;
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url(../img/close.png) no-repeat;
+  opacity: 1; }
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #000;
+  opacity: .8; }
+
+/*Конец модального окна*/
+
+/*Четвёртый экран*/
+
+.four-screen {
+  min-height: 1666px; }
+
+.about__img {
+  margin-top: 65px; }
+
+.about__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -439px;
+  font: 1em "Roboto Slab"; }
+
+.about__text-right {
+  left: 50%;
+  margin: -50px 0 0 116px; }
+
+.about__caption, .about__description {
+  color: #000;
+  font: 1.3em Montserrat, Verdana, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.about__description {
+  text-transform: none; }
+
+.line-about {
+  height: 81px;
+  width: 1px;
+  border: none;
+  border-left: 2px solid #f1f1f1;
+  position: absolute;
+  left: 50%; }
+
+.circle {
+  width: 183px;
+  height: 183px;
+  background-color: #fed136;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 7px solid #f2f2f2;
+  text-align: center;
+  margin-top: 65px; }
+
+.continues {
+  font: 18px Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px; }
+
+/*Пятый экран*/
+
+.five-screen {
+  min-height: 818px;
+  background-color: #f7f7f7; }
+
+.fa-user-circle{
+  font-size: 170px;
+  color: #000;
+}
+
+.people{
+  text-align: center;
+  margin-top: 87px;
+}
+
+.people__info{
+  margin-top: 25px;
+}
+
+.people__name{
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.people__prof{
+  font-family: "Roboto Slab"
+}
+
+.social-icons{
+  padding-left: 3%;
+}
+
+.social-icons_for_people{
+  font-size: 40px;
+  color: #ccc;
+  padding-right: 10px;
+}
+.social-icons_for_people:hover{
+  color: #000;
+}
+
+.people__text{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.down__description{
+  display: inline-block;
+  text-align: center;
+  margin-top: 51px;
+}
+
+.sponsor{
+  min-height: 164px;
+}
+
+.sponsor_label{
+  margin-top: 60px;
+  text-align: center;
+}
+
+/*Шестой экран*/
+
+.six-screen{
+  min-height: 876px;
+  background: #000;
+  position: relative;
+}
+
+.map{
+  position: absolute;
+  right: 0;
+  top: 110px;
+}
+
+.article-caption__text-big-white{
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.wrapper-form{
+  margin: 0 auto;
+  width: 440px;
+  text-align: center;
+}
+
+.form_input{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.form_input-big{
+  height: 210px;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+/*Подвал*/
+
+.footer{
+  min-height: 90px;
+}
+
+.footer-icons{
+  width: 235px;
+  margin: 20px auto;
+}
+
+.copy{
+  padding: 0;
+  margin-top: 10px;
+}
+
+.fix{
+  background: #28d1ad;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99999;
+  top: 90%;
+  right: 7px;
+  text-align: center;
+  opacity: .7;
+}
+
+.fa-chevron-up{
+  color: #000;
+  font-size: 30px;
+  margin-top: 7px;
+}
+
+@media screen and (max-width: 836px){
+  .about__text{
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .menu__link{
+    width: 100vw;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+
+/*ШРИФТЫ*/
+
+@font-face {
+  font-family: 'Roboto Slab' ; /* имя шрифта для CSS правил */
+  src: local('Roboto Slab'), /* проверяем наличие шрифта в ОС пользователя */
+    url(../fonts/RobotoSlab-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Serif' ;  /* имя шрифта для CSS правил */
+  src: local('Droid Serif'), /* проверяем наличие шрифта в ОС пользователя */
+    url(../fonts/DroidSerif-Italic.ttf) /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-weight: italic;
+    font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Montserrat' ;  /* имя шрифта для CSS правил */
+  src: local('Montserrat'), /* проверяем наличие шрифта в ОС пользователя */
+    url(../fonts/Montserrat/Montserrat-Regular.ttf) /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'wisdom script' ; /* имя шрифта для CSS правил */
+  src: local('wisdom-script'), /* проверяем наличие шрифта в ОС пользователя */
+    url(../fonts/wisdom-script.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-weight: normal;
+    font-style: normal;
+}
+

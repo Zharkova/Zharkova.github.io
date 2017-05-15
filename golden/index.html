@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+	<title>Golden</title>
+</head>
+<body>
+<div class="container-fluid">
+	<!-- Меню и первый экран -->
+	<div class="row">
+		<header class="header">
+				<div class="logo">
+					<p class="logo__text">golden</p>
+				</div>
+					<nav class="menu">
+						<a href="#anchor-home" class="menu__link">Home</a>
+						<a href="#anchor-services" class="menu__link">Services</a>
+						<a href="#anchor-portfolio" class="menu__link">Portfolio</a>
+						<a href="#anchor-about" class="menu__link">About</a>
+						<a href="#anchor-contact" class="menu__link menu__link-last">Contact</a>
+					</nav>
+				<div class="clearfix"></div>
+			<section class="first-screen" id="anchor-home">
+				<article class="first-screen__up">
+					<p class="first-screen__text first-screen__text_small">
+						Welcome To Our Studio!
+					</p>
+				</article>
+				<article class="first-screen__down">
+					<p class="first-screen__text first-screen__text_big">
+						It’s nice to Meet you
+					</p>
+				</article>
+				<button class="button show_popup" form="tell" rel="modal-form">
+					Tell Me More
+				</button>
+				<!-- Модальное окно -->
+				<div class="modal-form">
+					<a class="close" href="#">Close</a>
+					<h2 class="thank">Thank you. We will contact you.</h2>
+					<form id="tell" method="post" action="">
+						<div class="form-group">
+							<label for="form-group__input-name"" class="hidden form-group__label-form">Your name</label>
+							<input class="form-group__input-name" type="text" name="name" placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<label for="form-group__input-email" class="hidden form-group__label-form">Your Email</label>
+							<input class="form-group__input-email" type="email" name="mail" placeholder="Enter your Email">
+						</div>
+							<button type="submit" class="button button_small">Send</button>
+					</form>
+				</div>
+			</section>
+		</header>
+	</div>
+	<!-- Второй экран -->
+	<div class="row">
+		<section class="two-screen" id="anchor-services">
+			<article class="article-caption col-md-12 col-lg-12">
+				<p class="article-caption__text article-caption__text-big">
+					Services
+				</p>
+				<p class="article-caption__text article-caption__text-small">
+					Proin iaculis purus consequat sem cure
+				</p>
+			</article>
+			<section class="block col-lg-4 col-md-4">
+				<article class="services-column">
+					<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					<p class="services-column__caption services-column__caption-bold">
+						E-Commerce
+					</p>
+					<p class="services-column__caption services-column__caption-description">
+						Proin iaculis purus consequat sem cure <br /> 
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt.<br />
+					</p>
+				</article>
+			</section>
+			<section class="block col-lg-4 col-md-4">
+				<article class="services-column">
+					<i class="fa fa-laptop" aria-hidden="true"></i>
+					<p class="services-column__caption services-column__caption-bold">
+						Responsive Web
+					</p>
+					<p class="services-column__caption services-column__caption-description">
+						Proin iaculis purus consequat sem cure <br /> 
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt.<br />
+					</p>
+				</article>
+			</section>
+			<section class="block col-lg-4 col-md-4">
+				<article class="services-column">
+					<i class="fa fa-lock" aria-hidden="true"></i>
+					<p class="services-column__caption services-column__caption-bold">
+						Web Security
+					</p>
+					<p class="services-column__caption services-column__caption-description">
+						Proin iaculis purus consequat sem cure <br /> 
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt.<br />
+					</p>
+				</article>
+			</section>
+		</section>
+	</div>
+	<!-- Третий экран -->
+	<div class="row">
+		<section class="three-screen" id="anchor-portfolio">
+			<article class="article-caption col-md-12 col-lg-12">
+				<p class="article-caption__text article-caption__text-big">
+					Our portfolio
+				</p>
+				<p class="article-caption__text article-caption__text-small">
+					Proin iaculis purus consequat sem cure
+				</p>
+			</article>
+			<div class="clearfix"></div>
+			<section class="gallery-portfolio">
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-1.png" alt="Branding">
+					<p class="gallery-portfolio__description">
+						Ebony &amp; Ivory <br />
+						<span class="gallery-portfolio__small">
+							Branding
+						</span>
+					</p>
+				</article>
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-2.png" alt="Print Design">
+					<p class="gallery-portfolio__description">
+						Smart Stationary <br />
+						<span class="gallery-portfolio__small">
+							Print Design
+						</span>
+					</p>
+				</article>
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-3.png" alt="Print Design">
+					<p class="gallery-portfolio__description">
+						Clever Poster <br />
+						<span class="gallery-portfolio__small">
+							Print Design
+						</span>
+					</p>
+				</article>
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-4.png" alt="Product Mock-Up">
+					<p class="gallery-portfolio__description">
+						Vinyl Record <br />
+						<span class="gallery-portfolio__small">
+							Product Mock-Up
+						</span>
+					</p>
+				</article>
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-5.png" alt="Web Design">
+					<p class="gallery-portfolio__description">
+						Treehouse Template <br />
+						<span class="gallery-portfolio__small">
+							Web Design
+						</span>
+					</p>
+				</article>
+				<article class="col-lg-4 col-md-4">
+					<img class="gallery-img" src="img/works-6.png" alt="Branding">
+					<p class="gallery-portfolio__description">
+						Burned Logo <br />
+						<span class="gallery-portfolio__small">
+							Branding
+						</span>
+					</p>
+				</article>
+				<div class="clearfix"></div>
+			</section>
+		</section>
+	</div>
+	<!-- Четвёртый экран -->
+	<div class="row">
+		<section class="four-screen" id="anchor-about">
+			<article class="article-caption col-md-12 col-lg-12">
+				<p class="article-caption__text article-caption__text-big">
+					About us
+				</p>
+				<p class="article-caption__text article-caption__text-small">
+					Proin iaculis purus consequat sem cure
+				</p>
+			</article>
+			<!-- Первый круг -->
+			<section class="col-lg-12 col-md-12">
+				<article class="about">
+					<img class="about__img center-block" src="img/about-1.png" alt="about us">
+					<p class="about__text text-right">
+						<span class="about__caption">July 2010</span> <br />
+						<span class="about__description">
+							Our Humble Beginnings
+						</span> <br /> <br />
+						Proin iaculis purus consequat sem cure <br />
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt. Proin <br />
+						iaculis purus consequat sem cure digni <br />
+						ssim. Donec porttitora entum suscipit.
+					</p>
+				</article>
+				<div class="line-about"></div> <!-- Вертикальная линия -->
+			</section>
+			<!-- Второй круг -->
+			<section class="col-lg-12 col-md-12">
+				<article class="about">
+					<img class="about__img center-block" src="img/about-2.png" alt="about us">
+					<p class="about__text about__text-right text-left">
+						<span class="about__caption">January 2011</span> <br />
+						<span class="about__description">
+							Facing Startup Battles
+						</span> <br /> <br />
+						Proin iaculis purus consequat sem cure <br />
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt. Proin <br />
+						iaculis purus consequat sem cure digni <br />
+						ssim. Donec porttitora entum suscipit aenean <br />
+						rhoncus posuere odio in tincidunt
+					</p>
+				</article>
+				<div class="line-about"></div> <!-- Вертикальная линия -->
+			</section>
+			<!-- Третий круг -->
+			<section class="col-lg-12 col-md-12">
+				<article class="about">
+					<img class="about__img center-block" src="img/about-3.png" alt="about us">
+					<p class="about__text text-right">
+						<span class="about__caption">December 2012</span> <br />
+						<span class="about__description">
+							Enter The Dark Days
+						</span> <br /> <br />
+						Proin iaculis purus consequat sem cure <br />
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt. Proin <br />
+						iaculis purus consequat sem cure digni
+					</p>
+				</article>
+				<div class="line-about"></div> <!-- Вертикальная линия -->
+			</section>
+			<!-- Четвёртый круг -->
+			<section class="col-lg-12 col-md-12">
+				<article class="about">
+					<img class="about__img center-block" src="img/about-4.png" alt="about us">
+					<p class="about__text about__text-right text-left">
+						<span class="about__caption">February 2014</span> <br />
+						<span class="about__description">
+							Our Triumph
+						</span> <br /> <br />
+						Proin iaculis purus consequat sem cure <br />
+						digni ssim. Donec porttitora entum suscipit <br />
+						aenean rhoncus posuere odio in tincidunt. Proin <br />
+						iaculis purus consequat sem cure digni <br />
+						ssim. Donec porttitora entum suscipit aenean.
+					</p>
+				</article>
+				<div class="line-about"></div> <!-- Вертикальная линия -->
+			</section>
+			<!-- Пятый круг -->
+			<section class="col-lg-12 col-md-12">
+				<article class="about">
+					<div class="circle center-block">
+						<p class="continues">
+							Our <br />
+							Story <br />
+							Continues <br />
+							...
+						</p>
+					</div>
+				</article>
+			</section>
+		</section>
+	</div>
+	<!-- Пятый экран -->
+	<div class="row">
+		<section class="five-screen">
+			<article class="article-caption col-md-12 col-lg-12">
+				<p class="article-caption__text article-caption__text-big">
+					Our amazing team
+				</p>
+				<p class="article-caption__text article-caption__text-small">
+					Proin iaculis purus consequat sem cure
+				</p>
+			</article>
+			<section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 people">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+				<article class="people__info">
+					<p class="people__name">Kimberly Thompson</p>
+					<p class="people__prof">Marketer</p>			
+				</article>
+				<div class="social-icons">
+					<a href="#"><i class="fa fa-twitter-square social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-official social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-square social-icons_for_people" aria-hidden="true"></i></a>
+				</div>
+			</section>
+			<section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 people">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+				<article class="people__info">
+					<p class="people__name">Rico Massimo</p>
+					<p class="people__prof">Coder</p>			
+				</article>
+				<div class="social-icons">
+					<a href="#"><i class="fa fa-twitter-square social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-official social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square social-icons_for_people" aria-hidden="true"></i></a>
+				</div>
+			</section>
+			<section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 people">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+				<article class="people__info">
+					<p class="people__name">Uku Mason</p>
+					<p class="people__prof">Graphic Designer</p>			
+				</article>
+				<div class="social-icons">
+					<a href="#"><i class="fa fa-facebook-official social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-square social-icons_for_people" aria-hidden="true"></i></a>
+				</div>
+			</section>
+				<span class="down__description col-lg-12 col-md-12">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit<br />  
+				aenean rhoncus posuere odio in tincidunt proin iaculis.
+				</span>
+		</section>
+		<section class="sponsor">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sponsor_label">
+				<img src="img/Envato.png" alt="Envato">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sponsor_label">
+				<img src="img/WordPress.png" alt="WordPress">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sponsor_label">
+				<img src="img/Tuts.png" alt="Tuts">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sponsor_label">
+				<img src="img/Microlancer.png" alt="Microlancer">
+			</div>
+		</section>
+	</div>
+	<!-- Шестой экран -->
+	<div class="row">
+		<section class="six-screen" id="anchor-contact">
+			<article class="article-caption col-md-12 col-lg-12">
+			<p class="article-caption__text article-caption__text-big article-caption__text-big-white">
+				Contact us
+			</p>
+			<p class="article-caption__text article-caption__text-small">
+				Proin iaculis purus consequat sem cure
+			</p>
+		</article>
+			<img class="map" src="img/Map.png">
+			<div class="wrapper-form">
+				<form action="" method="post" class="contact_form">
+					<div class="form-group">
+						<label for="user_name" class="hidden">YOUR NAME*</label>
+						<input type="text" name="name" placeholder="YOUR NAME*" class="user_name form_input">
+					</div>
+					<div class="form-group">
+						<label for="user_email" class="hidden">YOUR E-MAIL*</label>
+						<input type="email" name="email" placeholder="YOUR E-MAIL*" class="user_email form_input">
+					</div>
+					<div class="form-group">
+						<label for="subject" class="hidden">SUBJECT</label>
+						<input type="text" name="subject" placeholder="SUBJECT" class="subject form_input">
+					</div>
+					<div class="form-group">
+						<label for="user_message" class="hidden">YOUR MESSAGE*</label>
+						<input type="text" name="message" placeholder="YOUR MESSAGE*" class="user_message form_input form_input-big">
+					</div>
+					<button class="button">send message</button>
+				</form>
+			</div>
+		</section>
+	</div>
+	<!-- Подвад -->
+	<div class="row">
+		<footer class="footer">
+			<p class="copy col-lg-3 col-md-3">
+				&copy;Copyright 2014 FreebiesXpress.com
+			</p>
+			<div class="social-icons footer-icons">
+					<a href="#"><i class="fa fa-twitter-square social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-official social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-square social-icons_for_people" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square social-icons_for_people" aria-hidden="true"></i></a>
+				</div>
+		</footer>
+	</div>
+</div>
+<div class="fix">
+	<a href="#anchor-home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+<!-- Медленная прокрутка -->
+<script type="text/javascript">
+ $(document).ready(function(){
+    $(".menu, .fix").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+<script type="text/javascript" src="libs/lightbox2/dist/js/lightbox.js"></script>
+<script type="text/javascript" src="libs/lightbox2/dist/js/light.js"></script>
+<script type="text/javascript" src="libs/popup.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

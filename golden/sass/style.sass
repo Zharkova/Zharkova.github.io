@@ -1,0 +1,308 @@
+// Reset
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	vertical-align: baseline
+	word-wrap: break-word
+
+
+a:focus 
+	outline: 0
+
+a:hover,
+a:active
+	outline: 0
+	text-decoration: none
+
+input
+	outline: none
+	border: none
+
+
+@mixin boldup
+	font-weight: bold
+	text-transform: uppercase
+
+.clearfix:before,
+.clearfix:after
+	content: ''
+	display: table
+
+.clearfix:after
+	clear: both
+
+body
+	color: #777
+
+// HEADER
+
+.header
+	background: url(../img/header-bg.png) center center/cover
+	min-height: 700px
+
+.logo
+	float: left
+	margin: 34px 0 0 10px
+
+.logo__text
+	color: #fed136
+	font: 2em "Wisdom Script", Roboto, sans-serif
+	&:hover
+		cursor: pointer
+
+.menu
+	float: right
+	margin: 47px 0 0 0
+
+.menu__link
+	font: 1em Montserrat, Verdana, sans-serif
+	color: #fff
+	text-transform: uppercase
+	margin-right: 43px
+	&:hover
+		color: #fed136
+		font-size: 1.5em
+		transition: 1.2s ease-in-out
+	&:focus
+		text-decoration: none
+		color: #fed136
+
+
+.menu__link-last
+	margin-right: 10px
+// END HEADER
+
+// FIRST-SCREEN
+.first-screen
+	text-align: center
+	margin-top: 198px
+
+.first-screen__down
+	margin-top: 19px
+
+.first-screen__text
+	color: #fff
+
+.first-screen__text_small
+	font: 3em "Droid Serif", Tahoma, sans-serif
+
+.first-screen__text_big
+	font: 5.4em Montserrat, Verdana, Arial, sans-serif
+	@include boldup
+
+.button
+	color: #fff
+	font: 1.3em Montserrat, Verdana, Arial, sans-serif
+	background-color: #fed136
+	border: none
+	width: 240px
+	height: 65px
+	border-radius: 3px
+	margin: 30px 0 30px 0
+	@include boldup
+	&:focus
+		outline: none
+
+// END FIRST-SCREEN
+
+// TWO-SCREEN
+
+.two-screen
+	min-height: 568px
+
+.article-caption
+	text-align: center
+
+.article-caption__text-big
+	font: 2.9em Montserrat, Verdana, sans-serif
+	color: #222
+	margin-top: 109px
+	@include boldup
+
+.article-caption__text-small
+	font: 1.2em "Droid Serif", Arial, sans-serif
+
+.services-column
+	text-align: center
+
+.services-column__caption-bold
+	font: 18px Montserrat
+	font-weight: bold
+	color: #222
+	margin-top: 21px
+
+.services-column__caption-description
+	font: 14px "Roboto Slab"
+
+.fa
+	color: #fed136
+	font-size: 45px
+	padding: 11px
+	border: 3px solid
+	border-radius: 50%
+
+.fa-lock
+	padding: 11px 22px
+
+.block
+	margin: 64px 0 20px 0
+
+// END TWO-SCREEN
+
+// THREE-SCREEN
+
+.three-screen
+	min-height: 1218px
+	background-color: #f7f7f7
+
+.gallery-portfolio
+	margin-top: 64px
+	text-align: center
+
+.gallery-img:hover
+	cursor: pointer
+	opacity: .5
+
+.gallery-portfolio__description
+	font: 18px Montserrat
+	font-weight: bold
+	color: #333
+	background-color: #fff
+	max-width: 291px
+	margin: 0 auto 50px auto
+	padding-top: 24px
+	height: 93px
+
+.gallery-portfolio__small
+	font: 14px "Droid Serif"
+
+// END THREE-SCREEN
+
+// POPUP
+
+.modal-form
+	padding: 5px 15px 15px
+	position: fixed
+	top: 30%
+	left: 50%
+	display: none
+	overflow: hidden
+	border: 2px solid #fff
+	background: #000
+	border-radius: 15px
+	z-index: 100
+	margin: -30px 50px 0 -150px
+
+#tell
+	margin-top: 25px
+
+.form-group__label-form
+	width: 100px
+	height: 38px
+	font: .8em Jura, Roboto, sans-serif
+	display: inline-block
+	vertical-align: top
+	color: #fff
+	font-weight: line
+	*zoom: 1
+
+.form-group__input-name
+	font: 1.3em Montserrat, Verdana, sans-serif
+	color: #000
+	padding: 10px
+	border-radius: 10px
+
+.form-group__input-email
+	@extend .form-group__input-name
+	margin-top: 10px
+
+.button_small
+	background: transparent
+	border: 2px solid #fed136
+
+.thank
+	color: #fff
+	line-height: 30px
+	font: 1.3em Montserrat, Verdana, sans-serif
+
+
+.close
+	width: 16px
+	height: 16px
+	display: block
+	text-indent: -9999px
+	position: absolute
+	top: 10px
+	right: 10px
+	background:url(../img/close.png) no-repeat
+	opacity: 1
+
+#overlay
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	display: none
+	background: #000
+	opacity: .8
+
+// END POPUP
+
+// FOUR SCREEN
+
+.four-screen
+	min-height: 1666px
+
+.about__img
+	margin-top: 65px
+
+.about__text
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -50px 0 0 -439px
+	font: 1em "Roboto Slab"
+
+.about__text-right
+	left: 50%
+	margin: -50px 0 0 116px
+
+.about__caption
+	color: #000
+	font: 1.3em Montserrat, Verdana, sans-serif
+	@include boldup
+
+.about__description
+	@extend .about__caption
+	text-transform: none
+
+.line-about
+	height: 81px
+	width:  1px
+	border: none
+	border-left: 2px solid #f1f1f1
+	position: absolute
+	left: 50%
+
+.circle
+	width: 183px
+	height: 183px
+	background-color: #fed136
+	border-radius: 50%
+	border: 7px solid #f2f2f2
+	text-align: center
+	margin-top: 65px
+
+.continues
+	font: 18px Montserrat
+	@include boldup
+	color: #fff
+	margin-top: 40px
+
+// FIVE-SCREEN
+
+.five-screen
+	min-height: 818px
+	background-color: #f7f7f7
