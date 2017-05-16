@@ -54,12 +54,12 @@ body {
   font: 1em Montserrat, Verdana, sans-serif;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: .3s ease;
+  transition: 1s ease-in-out;
   margin-right: 43px; }
-  .menu__link:hover {
+.menu a.menu__link:hover {
     color: #fed136;
-    font-size: 1.5em;
-    -webkit-transition: 1.2s ease-in-out;
-    transition: 1.2s ease-in-out; }
+    }
   .menu__link:focus {
     text-decoration: none;
     color: #fed136; }
