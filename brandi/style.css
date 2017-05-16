@@ -956,11 +956,16 @@ span {
 		left: 30%;
 	}
 
-  .first #carousel .carousel-caption h1 {
-    font-size: 2.8em;}
+	.first #carousel .carousel-caption h1 {
+		font-size: 2.8em;}
 
-    .first #carousel .carousel-caption h2 {
-    font-size: 1.5em;
+	.first #carousel .carousel-caption h2 {
+		font-size: 1.5em;
+	}
+
+	.item.active {
+		height: 900px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -979,4 +984,11 @@ span {
 	li.autor{
 		display: block;
 	}
+}
+
+@media screen and (max-width: 798px){
+	.two .carousel.slide .bottom {
+		bottom: 1px;
+	}
+
 }
